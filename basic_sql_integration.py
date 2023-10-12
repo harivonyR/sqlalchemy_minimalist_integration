@@ -24,7 +24,7 @@ class User(Base):
 
 # Step 3: Create a Database Connection
 # DB URL format '[dbengine]://[user]:[password]@[ip]:[port]/[database]' 
-engine = create_engine('mysql://root:Cpktnwt88#@localhost:3306/eurodata')
+engine = create_engine(DB_URL_STRING)
 
 # Step 4: Create Tables
 Base.metadata.create_all(engine)
